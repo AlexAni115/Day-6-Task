@@ -13,17 +13,20 @@ console.log(obj1.gender)
 console.log(obj1.salary)
 
 
-// class Uber {
-//     constructor(price,km){ 
-//         this.price=price;
-//         this.km = km;
-//     }
-//     {
-        
-//     }
+class Uber {
+    constructor(km,price=40){ 
+        this.km=km;
+        this.price= price;
+    }
+    get Price(){
+        return (this.km*this.price)
+    }
    
-// }var obj2 = new Uber(5,5)
-// console.log(obj2.price,obj2.km)
+   
+}var obj2 = new Uber(5)
+var obj3 = new Uber (5,110)
+console.log(obj2.Price)
+console.log(obj3.Price)
 
 
 // 2.Class Movie;
