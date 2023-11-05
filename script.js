@@ -38,8 +38,13 @@ class Movie {
         this.rating = rating;
 
 }
+get movive (){
+    return this.rating = "PG";
+}
 }var value = new Movie ("Casino Royale","Eon Productions","PG13")
 var value1= new Movie ("Spector","Universal studios",)
-
+var value2 = new Movie ("Die another day","MGM",)
+var value3 = new Movie("Day after tomorrow","Disney")
 console.log(value.title,value.studio,value.rating)
 console.log(value1.title,value1.studio,value1.rating)
+console.log(value.movive)
